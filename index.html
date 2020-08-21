@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-socket-js/1.0.0/web_socket.min.js" integrity="sha512-jtr9/t8rtBf1Sv832XjG1kAtUECQCqFnTAJWccL8CSC82VGzkPPih8rjtOfiiRKgqLXpLA1H/uQ/nq2bkHGWTQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Pomodoro</h1>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="timer">
+        <img id="img-tomate" src="./assets/tomato.png" alt="pomodoro">
+        <a id="clock">25:00</a>
+        <audio src="./assets/notification.mp3"></audio>
+        <img id="btn-stop" src="./assets/stop.png" >
+      </div>
+      <button id="btn-start" type="submit">Start</button>
+    </div>
+    <script src="./js/script.js"></script>
+  </div>
+</body>
+</html>
