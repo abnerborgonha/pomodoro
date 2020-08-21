@@ -25,10 +25,12 @@ function clock() {
     if(seg.toString().length == 1){					
       seg = "0" + seg;				
     }				
-    clockElement.innerHTML = min + ":" + seg;	
+    clockElement.innerHTML = min + ":" + seg;
+    window.document.title = `Pomodoro (${min}:${seg})`;	
     setTimeout('clock()', 1000);		
   }			
-  else{				
+  else{
+    window.document.title = `Pomodoro`;				
     clockElement.innerHTML= "00:00";	
     audio.play();
     status = false;		
